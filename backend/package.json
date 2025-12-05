@@ -6,8 +6,7 @@
  "scripts": {
   "dev": "nodemon server.js",
   "start": "node server.js",
-  "build": "npm install --prefix ../frontend && npm run build --prefix ../frontend"
-},
+"build": "npm install && cd ../frontend && npm install --no-package-lock && npm run build"},
   "dependencies": {
     "@stripe/stripe-js": "^8.5.3",
     "axios": "^1.13.2",
